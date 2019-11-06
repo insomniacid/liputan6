@@ -16,9 +16,10 @@ for item in items:
 	for link in links:
 		p = get(link.text)
 		sop = bs(p.text, 'html.parser') 
+		print(' Link :',link.text,"\n")
 		title = sop.find('h1',attrs={'class':'read-page--header--title entry-title'})
-		print(title.text,"\n")
+		print(' Title :',title.text,"\n")
 		date = sop.find('time', attrs={'class':'read-page--header--author__datetime updated'})
-		print(date.text,"\n")
+		print(' Date :',date.text,"\n")
 		ar = sop.find('div',attrs={'class':'article-content-body__item-content'})
-		print(ar.text,"\n")
+		print(' Article :',ar.text,"\n")
