@@ -1,1 +1,5 @@
-# liputan6
+# Liputan6
+Scraping Tool
+
+Usage
+- python rss.py
